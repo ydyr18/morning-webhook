@@ -42,9 +42,11 @@ export default async function handler(req, res) {
 
       return res.status(200).send(`User ${user.full_name} updated to premium`);
     } catch (err) {
-      console.error("❌ Error:", err.message);
-      return res.status(500).send("Internal server error");
-    }
+  console.error("❌ Error:", err.message);
+  console.error("❌ Full error object:", err);
+  return res.status(500).send("Internal server error");
+}
+
   }
 
   res.setHeader("Allow", ["POST", "GET"]);

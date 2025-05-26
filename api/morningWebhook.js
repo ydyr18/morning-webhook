@@ -1,6 +1,6 @@
-import base44sdk from '@base44/sdk';
+import createClient from '@base44/sdk';
 
-const base44 = base44sdk({
+const base44 = createClient({
   appId: process.env.BASE44_APP_ID,
 });
 

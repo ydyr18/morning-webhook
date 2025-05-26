@@ -1,4 +1,5 @@
 import { createClient } from '@base44/sdk';
+// minor change to force redeploy
 
 const base44 = createClient({
   appId: process.env.BASE44_APP_ID,

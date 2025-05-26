@@ -1,9 +1,9 @@
-import { createClient } from '@base44/sdk';
-// minor change to force redeploy
+import base44sdk from '@base44/sdk';
 
-const base44 = createClient({
+const base44 = base44sdk({
   appId: process.env.BASE44_APP_ID,
 });
+
 
 export default async function handler(req, res) {
   if (req.method === 'GET') {

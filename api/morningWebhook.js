@@ -1,4 +1,4 @@
-import { createClient } from 'npm:@base44/sdk@0.1.0';
+import { createClient } from '@base44/sdk';
 
 const base44 = createClient({
   appId: process.env.BASE44_APP_ID,
